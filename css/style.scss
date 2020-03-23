@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import 'classes';
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#pic-container{
+    height: 500px;
+    width: 714.5px;
+    overflow-x: hidden;
+    
+    figure{
+        position: relative;
+        display: flex;
+        height: 100%;
+        left: 0;
+        width: 500%;
+        background: rgb(218, 218, 253);
+        animation: 20s slide infinite;
+        img{
+            height: 100%;
+        }
+    }
+}
+
+
+
+@keyframes slide{
+    0% {left: 0;}
+    15%{left: 0;}
+    25%{left: -100%;}
+    35%{left: -100%;}
+    50%{left: -200%;}
+    65%{left: -200%;}
+    75%{left: -300%;}
+    90%{left: -300%;}
+    100% {left: -400%;}
+}
